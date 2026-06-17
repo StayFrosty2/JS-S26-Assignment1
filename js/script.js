@@ -9,6 +9,13 @@ let optionArray3 = ["a silly", "an evil", "an awesome", "a suspicious", "a giant
 let optionArray4 = ["Hedgehog", "Fox", "Cat", "Bug", "Crocodile", "Bird"];
 let optionArray5 = ["in the wall", "on the roof", "at the school", "in the soup pot", "in the garage", "on the moon"];
 
+// Variables track the user's choices, defaults to 0
+let firstChoice = 0;
+let secondChoice = 0;
+let thirdChoice = 0;
+let forthChoice = 0;
+let fifthChoice = 0;
+
 // Loop to display all of the options in the unordered lists
 for (let i = 1; i <= total; i++) {
     // Get the target ul from the document
@@ -40,8 +47,26 @@ for (let i = 1; i <= total; i++) {
     }
 }
 
+function cycleOptions(option) {
+    if (option === 1) {
+
+    }
+    else if (option === 2) {
+
+    }
+    else if (option === 3) {
+        
+    }
+    else if (option === 4) {
+        
+    }
+    else {
+        
+    }
+}
+
 // Add event listeners to all buttons
 const buttons = document.querySelectorAll("button");
 for (let i = 0; i = buttons.length; i++) {
-    
+
 }
