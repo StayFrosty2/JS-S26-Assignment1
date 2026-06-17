@@ -1,6 +1,6 @@
 // Variables
 let total = 5;
-let choices = 6;
+let amountOfChoices = 6;
 
 // Set of Arrays to store all of the options
 let optionArray1 = ["My Mom", "My Dad", "My Dog", "My Sibling", "The Firefighter", "My Teacher"];
@@ -40,7 +40,7 @@ for (let i = 1; i <= total; i++) {
     }
 
     // Loop through and add the list items for that ul
-    for (let j = 0; j < choices; j++) {
+    for (let j = 0; j < amountOfChoices; j++) {
         const newItem = document.createElement("li");
         newItem.textContent = tempArray[j];
         options.append(newItem);
@@ -49,7 +49,7 @@ for (let i = 1; i <= total; i++) {
 
 function cycleOptions(option) {
     if (option === 1) {
-
+        
     }
     else if (option === 2) {
 
@@ -68,5 +68,5 @@ function cycleOptions(option) {
 // Add event listeners to all buttons
 const buttons = document.querySelectorAll("button");
 for (let i = 0; i = buttons.length; i++) {
-
+    buttons[i].addEventListener("click", cycleOptions(i));
 }
