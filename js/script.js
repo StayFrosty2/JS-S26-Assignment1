@@ -26,6 +26,9 @@ const userChoice5 = document.querySelector("#choice5");
 // The p element which will contain the story when the user finishes
 const story = document.querySelector("#story");
 
+// The submit button for when the user has finished their story
+const submit = document.querySelector("#submit");
+
 // Function to update the page with the current selection
 function updateUserChoices() {
     userChoice1.textContent = optionArray1[firstChoice];
@@ -117,3 +120,9 @@ for (let i = 0; i < buttons.length; i++) {
 function createStory() {
     story.textContent = `${optionArray1[firstChoice]} ${optionArray2[secondChoice]} ${optionArray3[thirdChoice]} ${optionArray4[forthChoice]} ${optionArray5[fifthChoice]}.`;
 }
+
+// Prevents the default function of the anchor being used as the submit button, then gives it the on click effect of calling create story
+submit.addEventListener("click", (event) => {
+    event.preventDefault();
+    createStory();
+});
