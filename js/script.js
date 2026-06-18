@@ -25,7 +25,11 @@ const userChoice5 = document.querySelector("#choice5");
 
 // Function to update the page with the current selection
 function updateUserChoices() {
-    
+    userChoice1.textContent = optionArray1[firstChoice];
+    userChoice2.textContent = optionArray2[secondChoice];
+    userChoice3.textContent = optionArray3[thirdChoice];
+    userChoice4.textContent = optionArray4[forthChoice];
+    userChoice5.textContent = optionArray5[fifthChoice];
 }
 
 // Loop to display all of the options in the unordered lists
