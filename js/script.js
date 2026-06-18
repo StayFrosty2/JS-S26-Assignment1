@@ -104,6 +104,8 @@ function cycleOptions(option) {
 
 // Add event listeners to all buttons
 const buttons = document.querySelectorAll("button");
-for (let i = 0; i = buttons.length; i++) {
-    buttons[i].addEventListener("click", cycleOptions(i));
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", (event) => {
+        cycleOptions(i + 1);
+    });
 }
