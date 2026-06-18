@@ -29,6 +29,9 @@ const story = document.querySelector("#story");
 // The submit button for when the user has finished their story
 const submit = document.querySelector("#submit");
 
+// Random button for if the user would like to randomly create a story
+const random = document.querySelector("#random");
+
 // Function to update the page with the current selection
 function updateUserChoices() {
     userChoice1.textContent = optionArray1[firstChoice];
@@ -124,5 +127,22 @@ function createStory() {
 // Prevents the default function of the anchor being used as the submit button, then gives it the on click effect of calling create story
 submit.addEventListener("click", (event) => {
     event.preventDefault();
+    createStory();
+});
+
+// Random function that randomizes the choice variables
+function randomAll() {
+    firstChoice = Math.floor(Math.random()*(5 - 0) - 0);
+    secondChoice = Math.floor(Math.random()*(5 - 0) - 0);
+    thirdChoice = Math.floor(Math.random()*(5 - 0) - 0);
+    forthChoice = Math.floor(Math.random()*(5 - 0) - 0);
+    fifthChoice = Math.floor(Math.random()*(5 - 0) - 0);
+}
+
+// Adds an event listener to the random anchor that allows the user to randomize the story
+random.addEventListener("click", (event) => {
+    event.preventDefault();
+    randomAll();
+    updateUserChoices();
     createStory();
 });
