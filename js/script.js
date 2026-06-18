@@ -16,6 +16,18 @@ let thirdChoice = 0;
 let forthChoice = 0;
 let fifthChoice = 0;
 
+// Following elements show the user's choices
+const userChoice1 = document.querySelector("#choice1");
+const userChoice2 = document.querySelector("#choice2");
+const userChoice3 = document.querySelector("#choice3");
+const userChoice4 = document.querySelector("#choice4");
+const userChoice5 = document.querySelector("#choice5");
+
+// Function to update the page with the current selection
+function updateUserChoices() {
+    
+}
+
 // Loop to display all of the options in the unordered lists
 for (let i = 1; i <= total; i++) {
     // Get the target ul from the document
@@ -47,6 +59,8 @@ for (let i = 1; i <= total; i++) {
     }
 }
 
+
+// Cycles the choices, then runs another function to update the page
 function cycleOptions(option) {
     if (option === 1) {
         firstChoice++;
