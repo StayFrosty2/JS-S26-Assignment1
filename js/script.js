@@ -112,3 +112,8 @@ for (let i = 0; i < buttons.length; i++) {
         cycleOptions(i + 1);
     });
 }
+
+// Updates the story on the page
+function createStory() {
+    story.textContent = `${optionArray1[firstChoice]} ${optionArray2[secondChoice]} ${optionArray3[thirdChoice]} ${optionArray4[forthChoice]} ${optionArray5[fifthChoice]}.`;
+}
