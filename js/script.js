@@ -23,6 +23,9 @@ const userChoice3 = document.querySelector("#choice3");
 const userChoice4 = document.querySelector("#choice4");
 const userChoice5 = document.querySelector("#choice5");
 
+// The p element which will contain the story when the user finishes
+const story = document.querySelector("#story");
+
 // Function to update the page with the current selection
 function updateUserChoices() {
     userChoice1.textContent = optionArray1[firstChoice];
