@@ -49,19 +49,34 @@ for (let i = 1; i <= total; i++) {
 
 function cycleOptions(option) {
     if (option === 1) {
-        
+        firstChoice++;
+        if(firstChoice > total) {
+            firstChoice = 0;
+        }
     }
     else if (option === 2) {
-
+        secondChoice++;
+        if(secondChoice > total) {
+            secondChoice = 0;
+        }
     }
     else if (option === 3) {
-        
+        thirdChoice++;
+        if(thirdChoice > total) {
+            thirdChoice = 0;
+        }
     }
     else if (option === 4) {
-        
+        forthChoice++;
+        if(forthChoice > total) {
+            forthChoice = 0;
+        }
     }
     else {
-        
+        fifthChoice++;
+        if(fifthChoice > total) {
+            fifthChoice = 0;
+        }
     }
 }
 
