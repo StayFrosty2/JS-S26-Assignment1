@@ -32,6 +32,9 @@ function updateUserChoices() {
     userChoice5.textContent = optionArray5[fifthChoice];
 }
 
+// Updates the user choices at page load so they always have data in them
+updateUserChoices();
+
 // Loop to display all of the options in the unordered lists
 for (let i = 1; i <= total; i++) {
     // Get the target ul from the document
@@ -96,6 +99,7 @@ function cycleOptions(option) {
             fifthChoice = 0;
         }
     }
+    updateUserChoices();
 }
 
 // Add event listeners to all buttons
